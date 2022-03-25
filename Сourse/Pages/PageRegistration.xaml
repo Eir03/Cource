@@ -1,0 +1,23 @@
+﻿<Page x:Class="Сourse.Pages.PageRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Сourse.Pages"
+      mc:Ignorable="d" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="700" d:DesignWidth="600"
+      Title="PageRegistration">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <Image Style="{StaticResource LogoAuzhorization}"/>
+            <TextBlock Text="Регистрация" FontSize="36" TextAlignment="Center"/>
+            <TextBox materialDesign:HintAssist.Hint="Почта" FontSize="24" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            <PasswordBox materialDesign:HintAssist.Hint="Пароль" FontSize="24" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
+            <Button Content="Готово"  Name="BtnReg" Click="BtnReg_Click"
+                    Style="{StaticResource Main}"/>
+
+            <TextBlock Text="Назад" Style="{StaticResource Second}"
+                        Name="TbBack" MouseUp="TbBack_MouseUp"/>
+        </StackPanel>
+    </Grid>
+</Page>
