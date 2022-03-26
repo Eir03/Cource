@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Сourse.Classes;
+using Сourse.WindowFolder;
 
 namespace Сourse.Pages
 {
@@ -28,6 +29,10 @@ namespace Сourse.Pages
 
         private void BtnSign_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow main = new MainWindow();
+            main.Show();
+            AuthorizationWindow authorization = Application.Current.MainWindow as AuthorizationWindow;
+            if (authorization != null) { authorization.Close(); }
 
         }
 

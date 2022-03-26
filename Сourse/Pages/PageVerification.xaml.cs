@@ -21,9 +21,14 @@ namespace Сourse.Pages
     /// </summary>
     public partial class PageVerification : Page
     {
-        public PageVerification()
+        private int code;
+
+        public PageVerification(string email)
         {
             InitializeComponent();
+            Random rnd = new Random();
+            code = rnd.Next(100000, 999999);
+            EmailClass.PushEmail(email, "Код для подтверждения почты" + code).GetAwaiter();
         }
         private void TbBack_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -32,7 +37,7 @@ namespace Сourse.Pages
 
         private void BtnReg_Click(object sender, RoutedEventArgs e)
         {
-            if (EmailClass.code == int.Parse(TxbCode.Text))
+            if (code == int.Parse(TxbCode.Text))
             {
                 MessageBox.Show("Все верно");
             }

@@ -15,8 +15,6 @@
                        TextAlignment="Center"
                        Width="300"
                        TextWrapping="Wrap"/>
-            <TextBlock Text="[Таймер]" FontSize="20"  Name="TbTimer"
-                       TextAlignment="Center" /> 
             <TextBox materialDesign:HintAssist.Hint="Код" FontSize="24"
                      Name="TxbCode"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>

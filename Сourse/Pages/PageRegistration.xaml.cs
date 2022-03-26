@@ -33,8 +33,7 @@ namespace Сourse.Pages
 
         private void BtnReg_Click(object sender, RoutedEventArgs e)
         {
-            EmailClass.PushEmail(TxbEmail.Text, "Код для подтверждения почты").GetAwaiter();
-            PageClass.frmAuthorization.Navigate(new PageVerification());
+            PageClass.frmAuthorization.Navigate(new PageVerification(TxbEmail.Text));
         }
     }
 }
