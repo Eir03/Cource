@@ -17,15 +17,14 @@ using Сourse.Classes;
 namespace Сourse.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageRegistration.xaml
+    /// Логика взаимодействия для PageVerification.xaml
     /// </summary>
-    public partial class PageRegistration : Page
+    public partial class PageVerification : Page
     {
-        public PageRegistration()
+        public PageVerification()
         {
             InitializeComponent();
         }
-
         private void TbBack_MouseUp(object sender, MouseButtonEventArgs e)
         {
             PageClass.frmAuthorization.GoBack();
@@ -33,8 +32,10 @@ namespace Сourse.Pages
 
         private void BtnReg_Click(object sender, RoutedEventArgs e)
         {
-            EmailClass.PushEmail(TxbEmail.Text, "Код для подтверждения почты").GetAwaiter();
-            PageClass.frmAuthorization.Navigate(new PageVerification());
+            if (EmailClass.code == int.Parse(TxbCode.Text))
+            {
+                MessageBox.Show("Все верно");
+            }
         }
     }
 }
