@@ -9,11 +9,11 @@
       d:DesignHeight="700" d:DesignWidth="600"
       Title="PageAuzhorization">
     <Grid>
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Width="300">
             <Image Style="{StaticResource LogoAuzhorization}" />
-            <TextBlock Text="Авторизация" FontSize="36" TextAlignment="Center"/>
-            <TextBox materialDesign:HintAssist.Hint="Логин" FontSize="24" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-            <PasswordBox materialDesign:HintAssist.Hint="Пароль" FontSize="24" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
+            <TextBlock Text="Авторизация" FontSize="30" TextAlignment="Center"/>
+            <TextBox materialDesign:HintAssist.Hint="Логин" FontSize="20" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            <PasswordBox materialDesign:HintAssist.Hint="Пароль" FontSize="20" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
             <Button Content="Войти" Name="BtnSign" Click="BtnSign_Click"
                     Style="{StaticResource Main}"/>
 

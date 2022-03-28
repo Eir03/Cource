@@ -9,13 +9,13 @@
       Title="PageVerification">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Width="300">
             <Image Style="{StaticResource LogoAuzhorization}"/>
             <TextBlock Text="Введите код присланный вам на почту" FontSize="24" 
                        TextAlignment="Center"
                        Width="300"
                        TextWrapping="Wrap"/>
-            <TextBox materialDesign:HintAssist.Hint="Код" FontSize="24"
+            <TextBox materialDesign:HintAssist.Hint="Код" FontSize="20"
                      Name="TxbCode"
                      Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
             

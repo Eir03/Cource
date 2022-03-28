@@ -3,21 +3,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Сourse"
+        xmlns:local="clr-namespace:Сourse" WindowState="Maximized"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="Текстиль" Height="800" Width="1200">
+        Title="Текстиль" Height="800" Width="1200" MinHeight="800" MinWidth="900">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid>
             <Border Background="#CEB49B" CornerRadius="0 100 0 0">
-                <Image Style="{StaticResource LogoAuzhorization}" Height="100">
-                    <Image.Effect>
-                        <DropShadowEffect Color="Black" ShadowDepth="4" RenderingBias="Performance" Direction="300" BlurRadius="4" Opacity="0.2"/>
-                    </Image.Effect>
-                </Image>
+                <StackPanel>
+                    <Image Style="{StaticResource LogoAuzhorization}" Height="100">
+                        <Image.Effect>
+                            <DropShadowEffect Color="Black" ShadowDepth="4" RenderingBias="Performance" Direction="300" BlurRadius="4" Opacity="0.2"/>
+                        </Image.Effect>
+                    </Image>
+                    <ListView Name="ListMain" Style="{StaticResource ListTape}">
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Каталог" Style="{StaticResource TbList}"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem >
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Корзина" Style="{StaticResource TbList}"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Профиль" Style="{StaticResource TbList}"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="О нас" Style="{StaticResource TbList}"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
             </Border>
         </Grid>
     </Grid>

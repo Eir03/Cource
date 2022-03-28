@@ -8,13 +8,13 @@
       d:DesignHeight="700" d:DesignWidth="600"
       Title="PageRegistration">
     <Grid>
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" Width="300">
             <Image Style="{StaticResource LogoAuzhorization}"/>
-            <TextBlock Text="Регистрация" FontSize="36" TextAlignment="Center"/>
+            <TextBlock Text="Регистрация" FontSize="30" TextAlignment="Center"/>
             <TextBox materialDesign:HintAssist.Hint="Почта" Name="TxbEmail"
-                     FontSize="24" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                     FontSize="20" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"/>
             <PasswordBox materialDesign:HintAssist.Hint="Пароль" Name="PbPassword"
-                         FontSize="24" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
+                         FontSize="20" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
             <Button Content="Готово"  Name="BtnReg" Click="BtnReg_Click"
                     Style="{StaticResource Main}"/>
 

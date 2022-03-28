@@ -52,7 +52,7 @@
             <!--Кнопка-->
             <Style TargetType="Button" x:Key="Main">
                 <Setter Property="Background" Value="Transparent"/>
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="20"/>
                 <Setter Property="Width" Value="160"/>
                 <Setter Property="Margin" Value="0 20"/>
                 <Setter Property="Template">
@@ -86,7 +86,7 @@
 
 
             <Style TargetType="TextBlock" x:Key="Second">
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="20"/>
                 <Setter Property="Foreground" Value="#B3B3B3"/>
                 <Setter Property="TextAlignment" Value="Center"/>
                 <Style.Triggers>
@@ -95,8 +95,32 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-            
-            
+
+            <Style TargetType="ListView" x:Key="ListTape">
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="TbList">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="Margin" Value="15 0 0 0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect BlurRadius="4" ShadowDepth="2" Color="#3F000000" Direction="300"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="ListViewItem" x:Key="LVMain">
+                <Setter Property="Height" Value="65"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
