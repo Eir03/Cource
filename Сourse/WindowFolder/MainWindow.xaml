@@ -43,6 +43,7 @@
                     </ListView>
                 </StackPanel>
             </Border>
+            <Frame Grid.Column="1" Name="FrmMain"/>
         </Grid>
     </Grid>
 </Window>

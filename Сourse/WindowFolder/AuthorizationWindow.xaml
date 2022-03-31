@@ -8,6 +8,6 @@
         WindowStyle="SingleBorderWindow" ResizeMode="NoResize"
         Title="Текстиль" Height="750" Width="600">
     <Grid>
-        <Frame Name="Frm" NavigationUIVisibility="Hidden"/>
+        <Frame Name="Frm"/>
     </Grid>
 </Window>

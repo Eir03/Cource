@@ -19,6 +19,10 @@
                 <Setter Property="FontFamily" Value="Roboto"/>
             </Style>
 
+            <Style TargetType="Frame">
+                <Setter Property="NavigationUIVisibility" Value="Hidden"/>
+            </Style>
+            
             <Style TargetType="Image" x:Key="LogoAuzhorization">
                 <Setter Property="Source" Value="/Resource/Images/splash.png"/>
                 <Setter Property="Width" Value="150"/>
@@ -116,14 +120,13 @@
                 <Setter Property="Height" Value="55"/>
                 <Setter Property="Width" Value="240"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>
-                
+                <Setter Property="BorderThickness" Value="0,0,0,4"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Margin" Value="0 5"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type ListViewItem}">
                             <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
-                                <Border.Effect>
-                                    <DropShadowEffect BlurRadius="4" ShadowDepth="2" Color="Red" Direction="300"/>
-                                </Border.Effect>
                                 <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                             </Border>
                             <ControlTemplate.Triggers>
@@ -132,7 +135,7 @@
                                         <Condition Property="IsMouseOver" Value="True"/>
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"  Value="#BAA089"/>
-                                    <Setter Property="BorderBrush"  Value="#BAA089"/>
+                                    <Setter Property="BorderBrush" Value="#FFB69A82"/>
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -140,7 +143,7 @@
                                         <Condition Property="IsSelected" Value="True"/>
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"  Value="#BAA089"/>
-                                    <Setter Property="BorderBrush"  Value="#BAA089"/>
+                                    <Setter Property="BorderBrush"  Value="#FFB69A82"/>
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -148,7 +151,7 @@
                                         <Condition Property="IsSelected" Value="True"/>
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"  Value="#BAA089"/>
-                                    <Setter Property="BorderBrush"  Value="#BAA089"/>
+                                    <Setter Property="BorderBrush"  Value="#FFB69A82"/>
                                 </MultiTrigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="TextElement.Foreground"  Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
