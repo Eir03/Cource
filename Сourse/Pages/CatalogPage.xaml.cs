@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Сourse.BD;
 
 namespace Сourse.Pages
 {
@@ -23,6 +24,7 @@ namespace Сourse.Pages
         public CatalogPage()
         {
             InitializeComponent();
+            CategoryList.ItemsSource = Odb.entities.ProductType.ToList();
         }
     }
 }

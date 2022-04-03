@@ -1,0 +1,42 @@
+﻿<Page x:Class="Сourse.Pages.PageCategory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Сourse.Pages"
+      mc:Ignorable="d"  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="730" d:DesignWidth="960"
+      Title="PageColor">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="borderRect" Grid.Row="1"
+              VerticalAlignment="Center"
+                           Background="#FFCECCCC"
+                           Width="200" Height="200"
+                           AllowDrop="True" 
+                           DragLeave="borderRect_DragLeave"
+                           DragEnter="borderRect_DragEnter"
+                           Drop="borderRect_Drop">
+            <Image Name="WOW" Stretch="UniformToFill"/>
+        </Grid>
+        
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+            <Button Content="Добавить" Name="BtnAdd" Click="BtnAdd_Click"
+                    Style="{StaticResource Main}" Margin="30 10" Width="150"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+            <TextBox Name="TxbName"
+                        materialDesign:HintAssist.Hint="Название" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
+                        Width="200"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

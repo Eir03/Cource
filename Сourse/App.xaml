@@ -104,18 +104,7 @@
                 <Setter Property="HorizontalAlignment" Value="Center"/>
                 <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
             </Style>
-
-            <Style TargetType="TextBlock" x:Key="TbList">
-                <Setter Property="FontSize" Value="24"/>
-                <Setter Property="Margin" Value="15 0 0 0"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Effect">
-                    <Setter.Value>
-                        <DropShadowEffect BlurRadius="4" ShadowDepth="2" Color="#3F000000" Direction="300"/>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
+            
             <Style TargetType="ListViewItem">
                 <Setter Property="Height" Value="55"/>
                 <Setter Property="Width" Value="240"/>
@@ -161,7 +150,41 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            
+
+            <Style TargetType="TextBlock" x:Key="TbList">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="Margin" Value="15 0 0 0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect BlurRadius="4" ShadowDepth="2" Color="#3F000000" Direction="300"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Image" x:Key="CatalogImage">
+                <Style.Triggers>
+                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                        <BeginStoryboard>
+                                <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" From="0.7" Duration="0:0:0.3"/>
+                            </Storyboard>
+                            </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0.7" From="1" Duration="0:0:0.3"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="DataGrid">
+                <Setter Property="AutoGenerateColumns" Value="False"/>
+                <Setter Property="IsReadOnly" Value="True"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -12,14 +12,20 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid>
-            <Border Background="#CEB49B" CornerRadius="0 100 0 0">
+            <Border CornerRadius="0 100 0 0">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFCEB49B"/>
+                        <GradientStop Color="#FFC5AC93" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
                 <StackPanel>
                     <Image Style="{StaticResource LogoAuzhorization}" Height="100" Width="100">
                         <Image.Effect>
                             <DropShadowEffect Color="Black" ShadowDepth="4" RenderingBias="Performance" Direction="300" BlurRadius="4" Opacity="0.2"/>
                         </Image.Effect>
                     </Image>
-                    <ListView Name="ListMain" Style="{StaticResource ListTape}">
+                    <ListView Name="ListMain" Style="{StaticResource ListTape}" SelectionChanged="ListMain_SelectionChanged">
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Каталог" Style="{StaticResource TbList}"/>
@@ -32,18 +38,18 @@
                         </ListViewItem>
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Профиль" Style="{StaticResource TbList}"/>
+                                <TextBlock Text="Добавить товар" Style="{StaticResource TbList}"/>
                             </StackPanel>
                         </ListViewItem>
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="О нас" Style="{StaticResource TbList}"/>
+                                <TextBlock Text="Профиль" Style="{StaticResource TbList}"/>
                             </StackPanel>
                         </ListViewItem>
                     </ListView>
                 </StackPanel>
             </Border>
-            <Frame Grid.Column="1" Name="FrmMain"/>
         </Grid>
+        <Frame Grid.Column="1" Name="FrmMain" />
     </Grid>
 </Window>

@@ -10,5 +10,7 @@ namespace Сourse.Classes
     internal class PageClass
     {
         public static Frame frmAuthorization;
+        public static Frame frmMain;
+        public static Frame frmAdd;
     }
 }

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Сourse.BD;
+using Сourse.Classes;
+using Сourse.Pages;
 
 namespace Сourse
 {
@@ -23,6 +26,28 @@ namespace Сourse
         public MainWindow()
         {
             InitializeComponent();
+            Odb.entities = new Eir_CourceEntities();
+            PageClass.frmMain = FrmMain;
+            PageClass.frmMain.Navigate(new CatalogPage());
+        }
+
+        private void ListMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (ListMain.SelectedIndex)
+            {
+                case 0:
+                    PageClass.frmMain.Navigate(new CatalogPage());
+                    break;
+                case 1:
+                    PageClass.frmMain.Navigate(null);
+                    break;
+                case 2:
+                    PageClass.frmMain.Navigate(new PageAdd());
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

@@ -5,9 +5,36 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Сourse.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="960"
       Title="CatalogPage">
-    <Grid>
         
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="730*"/>
+        </Grid.RowDefinitions>
+            <TextBlock Text="Выберите категорию" Style="{StaticResource Second}"
+                       Foreground="Black" FontSize="32" VerticalAlignment="Center"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                <ItemsControl Name="CategoryList"
+                                  Margin="10"  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Top">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="25">
+                                <Image Style="{StaticResource CatalogImage}" 
+                                            Source="{Binding Img}" 
+                                       Height="200" Width="200" Opacity="0.7" Stretch="Fill"/>
+                                <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" FontSize="24"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </Page>

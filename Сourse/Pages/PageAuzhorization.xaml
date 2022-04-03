@@ -12,7 +12,7 @@
         <StackPanel HorizontalAlignment="Center" Width="300">
             <Image Style="{StaticResource LogoAuzhorization}" />
             <TextBlock Text="Авторизация" FontSize="30" TextAlignment="Center"/>
-            <TextBox materialDesign:HintAssist.Hint="Логин" FontSize="20" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            <TextBox materialDesign:HintAssist.Hint="Логин" FontSize="20" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"/>
             <PasswordBox materialDesign:HintAssist.Hint="Пароль" FontSize="20" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Cursor="Arrow"/>
             <Button Content="Войти" Name="BtnSign" Click="BtnSign_Click"
                     Style="{StaticResource Main}"/>
