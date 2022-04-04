@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Сourse" WindowState="Maximized"
+        xmlns:local="clr-namespace:Сourse"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="Текстиль" Height="800" Width="1200" MinHeight="800" MinWidth="900">
     <Grid>
@@ -38,7 +38,7 @@
                         </ListViewItem>
                         <ListViewItem>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Добавить товар" Style="{StaticResource TbList}"/>
+                                <TextBlock Text="Добавить данные" Style="{StaticResource TbList}"/>
                             </StackPanel>
                         </ListViewItem>
                         <ListViewItem>

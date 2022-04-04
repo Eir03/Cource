@@ -24,7 +24,7 @@ namespace Сourse.Classes
             MailMessage m = new MailMessage(from, to);
             
             m.Subject = "Подтверждение почты";
-            m.Body = body + "\n" + code.ToString();
+            m.Body = body + code.ToString();
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.Credentials = new NetworkCredential("spamtestt56@gmail.com", "SpamTest2022!");
             smtp.EnableSsl = true;

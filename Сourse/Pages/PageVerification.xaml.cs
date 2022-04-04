@@ -27,8 +27,8 @@ namespace Сourse.Pages
         {
             InitializeComponent();
             Random rnd = new Random();
-            code = rnd.Next(100000, 999999);
-            EmailClass.PushEmail(email, "Код для подтверждения почты" + code).GetAwaiter();
+            code = rnd.Next(10000, 99999);
+            EmailClass.PushEmail(email, "Код для подтверждения почты " + code).GetAwaiter();
         }
         private void TbBack_MouseUp(object sender, MouseButtonEventArgs e)
         {
