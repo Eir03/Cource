@@ -1,0 +1,68 @@
+﻿<Page x:Class="Сourse.Pages.PageProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Сourse.Pages"
+      mc:Ignorable="d"  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="800" d:DesignWidth="960"
+      Title="PageProduct">
+
+    <Grid>
+        
+        <StackPanel HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+            <TextBox Name="TxbName" 
+                        materialDesign:HintAssist.Hint="1. Название" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
+                        Width="200"/>
+            <StackPanel>
+                <TextBox
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                    VerticalAlignment="Top"
+                    Height="200" Width="250"
+                    AcceptsReturn="True"
+                    Margin="10"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto"
+                    materialDesign:HintAssist.Hint="2. Описание товара"
+                    IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" />
+                <ComboBox Margin="0 10"
+                  materialDesign:HintAssist.Hint="4. Категория"
+                  materialDesign:HintAssist.HintOpacity=".26"
+                  IsEditable="True" FontSize="16"/>
+                <ComboBox
+                  materialDesign:HintAssist.Hint="3. Материал" Margin="0 10"
+                  materialDesign:HintAssist.HintOpacity=".26"
+                  IsEditable="True" FontSize="16"/>
+                <ComboBox Margin="0 10"
+                  materialDesign:HintAssist.Hint="4. Цвет"
+                  materialDesign:HintAssist.HintOpacity=".26"
+                  IsEditable="True" FontSize="16"/>
+                <TextBox Name="TxbCost" 
+                        materialDesign:HintAssist.Hint="5. Стоимость" FontSize="16" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
+                        Width="200"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <Grid Name="borderRect"
+              VerticalAlignment="Center" HorizontalAlignment="Left"
+              Margin="30"
+                           Background="#FFCECCCC"
+                           Width="200" Height="200"
+                           AllowDrop="True" 
+                           DragLeave="borderRect_DragLeave"
+                           DragEnter="borderRect_DragEnter"
+                           Drop="borderRect_Drop">
+            <TextBlock Text="6. Перетащите изображение" TextAlignment="Center"
+                       VerticalAlignment="Center"/>
+            <Image Name="WOW" Stretch="UniformToFill"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+            <Button Content="Добавить" Name="BtnAdd" Click="BtnAdd_Click"
+                    Style="{StaticResource Main}" Margin="30 10" Width="150"/>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

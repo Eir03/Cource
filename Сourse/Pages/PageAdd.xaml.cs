@@ -33,7 +33,7 @@ namespace Сourse.Pages
             switch (CmbChoice.SelectedIndex)
             {
                 case 0:
-                    PageClass.frmAdd.Navigate(null);
+                    PageClass.frmAdd.Navigate(new PageProduct());
                     break;
                 case 1:
                     PageClass.frmAdd.Navigate(new PageCategory());
@@ -42,7 +42,7 @@ namespace Сourse.Pages
                     PageClass.frmAdd.Navigate(new PageMaterial());
                     break;
                 case 3:
-                    PageClass.frmAdd.Navigate(new PageMaterial());
+                    PageClass.frmAdd.Navigate(null);
                     break;
                 case 4:
                     PageClass.frmAdd.Navigate(new PageColor());

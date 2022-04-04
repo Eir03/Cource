@@ -10,20 +10,7 @@
 
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="20*"/>
-        </Grid.RowDefinitions>
-        <Grid Name="borderRect" Grid.Row="1"
-              VerticalAlignment="Center"
-                           Background="#FFCECCCC"
-                           Width="200" Height="200"
-                           AllowDrop="True" 
-                           DragLeave="borderRect_DragLeave"
-                           DragEnter="borderRect_DragEnter"
-                           Drop="borderRect_Drop">
-            <Image Name="WOW" Stretch="UniformToFill"/>
-        </Grid>
+        
         
         <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
             <Button Content="Добавить" Name="BtnAdd" Click="BtnAdd_Click"
@@ -31,11 +18,21 @@
         </StackPanel>
 
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+        <StackPanel HorizontalAlignment="Center"
                             VerticalAlignment="Center">
-            <TextBox Name="TxbName"
-                        materialDesign:HintAssist.Hint="Название" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
+            <TextBox Name="TxbName" Margin="0 10"
+                        materialDesign:HintAssist.Hint="1. Название" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
                         Width="200"/>
+            <Grid Name="borderRect" Grid.Row="1"
+                  VerticalAlignment="Center"
+                               Background="#FFCECCCC"
+                               Width="200" Height="200"
+                               AllowDrop="True" 
+                               DragLeave="borderRect_DragLeave"
+                               DragEnter="borderRect_DragEnter"
+                               Drop="borderRect_Drop">
+                <Image Name="WOW" Stretch="UniformToFill"/>
+            </Grid>
 
         </StackPanel>
     </Grid>
