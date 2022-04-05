@@ -41,11 +41,6 @@
                                 <TextBlock Text="Добавить данные" Style="{StaticResource TbList}"/>
                             </StackPanel>
                         </ListViewItem>
-                        <ListViewItem>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Профиль" Style="{StaticResource TbList}"/>
-                            </StackPanel>
-                        </ListViewItem>
                     </ListView>
                 </StackPanel>
             </Border>

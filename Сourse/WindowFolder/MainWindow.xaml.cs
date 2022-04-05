@@ -39,12 +39,11 @@ namespace Сourse
                     PageClass.frmMain.Navigate(new CatalogPage());
                     break;
                 case 1:
-                    PageClass.frmMain.Navigate(null);
+                    PageClass.frmMain.Navigate(new BasketPage());
                     break;
                 case 2:
                     PageClass.frmMain.Navigate(new PageAdd());
                     break;
-
                 default:
                     break;
             }

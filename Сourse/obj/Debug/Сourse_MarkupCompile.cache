@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Danila\source\repos\Сourse\Сourse\App.xaml
-11-864389281
+14207890599
 21746581585
-32-102066628
+36-293704889
 222023585299
-Pages\CatalogPage.xaml;Pages\PageAdd.xaml;Pages\PageAuzhorization.xaml;Pages\PageCategory.xaml;Pages\PageColor.xaml;Pages\PageMaterial.xaml;Pages\PageProduct.xaml;Pages\PageRegistration.xaml;Pages\PageVerification.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\MainWindow.xaml;
+Pages\BasketPage.xaml;Pages\CatalogPage.xaml;Pages\PageAdd.xaml;Pages\PageAuzhorization.xaml;Pages\PageCatalogPage.xaml;Pages\PageCategory.xaml;Pages\PageColor.xaml;Pages\PageFull.xaml;Pages\PageMaterial.xaml;Pages\PageProduct.xaml;Pages\PageRegistration.xaml;Pages\PageVerification.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\MainWindow.xaml;
 resource\images\splash.png
 False
 

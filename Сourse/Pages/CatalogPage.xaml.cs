@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Сourse.BD;
+using Сourse.Classes;
 
 namespace Сourse.Pages
 {
@@ -25,6 +26,11 @@ namespace Сourse.Pages
         {
             InitializeComponent();
             CategoryList.ItemsSource = Odb.entities.ProductType.ToList();
+        }
+
+        private void Img_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            PageClass.frmMain.Navigate(new PageCatalogPage((int)((Image)sender).Tag));
         }
     }
 }

@@ -22,7 +22,7 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="25">
-                                <Image Style="{StaticResource CatalogImage}" 
+                                <Image Style="{StaticResource CatalogImage}" Name="Img" MouseUp="Img_MouseUp"
                                             Source="{Binding Img}" Tag="{Binding Id}" Cursor="Hand"
                                        Height="200" Width="200" Opacity="0.7" Stretch="Fill"/>
                                 <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" FontSize="24"/>

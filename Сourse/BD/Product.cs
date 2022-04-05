@@ -11,7 +11,9 @@ namespace Сourse.BD
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.IO;
+    using System.Windows.Media.Imaging;
+
     public partial class Product
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -29,6 +31,22 @@ namespace Сourse.BD
         public string Description { get; set; }
         public Nullable<decimal> Cost { get; set; }
         public byte[] Image { get; set; }
+        public BitmapImage Img
+        {
+            get
+            {
+                using (var ms = new MemoryStream(Image))
+                {
+                    var image = new BitmapImage();
+                    image.BeginInit();
+                    image.CacheOption = BitmapCacheOption.OnLoad;
+                    image.StreamSource = ms;
+                    image.EndInit();
+                    return image;
+                }
+            }
+        }
+        public bool IsBasket { get; set; }
         public string Size { get; set; }
     
         public virtual Color Color { get; set; }

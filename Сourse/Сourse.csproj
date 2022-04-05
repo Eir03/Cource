@@ -92,6 +92,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\BasketPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CatalogPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,11 +108,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageCatalogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageCategory.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\PageColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageFull.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -191,6 +203,10 @@
     </Compile>
     <Compile Include="Classes\EmailClass.cs" />
     <Compile Include="Classes\PageClass.cs" />
+    <Compile Include="Classes\ProductClass.cs" />
+    <Compile Include="Pages\BasketPage.xaml.cs">
+      <DependentUpon>BasketPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CatalogPage.xaml.cs">
       <DependentUpon>CatalogPage.xaml</DependentUpon>
     </Compile>
@@ -200,11 +216,17 @@
     <Compile Include="Pages\PageAuzhorization.xaml.cs">
       <DependentUpon>PageAuzhorization.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PageCatalogPage.xaml.cs">
+      <DependentUpon>PageCatalogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageCategory.xaml.cs">
       <DependentUpon>PageCategory.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageColor.xaml.cs">
       <DependentUpon>PageColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageFull.xaml.cs">
+      <DependentUpon>PageFull.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageMaterial.xaml.cs">
       <DependentUpon>PageMaterial.xaml</DependentUpon>

@@ -10,11 +10,11 @@
 
 
     <Grid>
-        
-        
-        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="50">
             <Button Content="Добавить" Name="BtnAdd" Click="BtnAdd_Click"
-                    Style="{StaticResource Main}" Margin="30 10" Width="150"/>
+                    Style="{StaticResource Main}"  Width="150"/>
         </StackPanel>
 
 
@@ -31,6 +31,8 @@
                                DragLeave="borderRect_DragLeave"
                                DragEnter="borderRect_DragEnter"
                                Drop="borderRect_Drop">
+                <TextBlock Text="2. Перетащите изображение" TextAlignment="Center"
+                       VerticalAlignment="Center"/>
                 <Image Name="WOW" Stretch="UniformToFill"/>
             </Grid>
 

@@ -47,3 +47,9 @@ C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageCategory.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageCategory.baml
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageProduct.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageProduct.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageCatalogPage.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageCatalogPage.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageFull.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageFull.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.baml

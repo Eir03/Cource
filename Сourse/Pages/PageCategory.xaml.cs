@@ -62,7 +62,6 @@ namespace Сourse.Pages
                 var data = e.Data.GetData(DataFormats.FileDrop);
                 if(data != null)
                 {
-
                     var files = data as string[];
                     if (files.Length > 0)
                     {
@@ -83,8 +82,7 @@ namespace Сourse.Pages
             catch (Exception)
             {
                 bytes = null;
-            }
-            
+            } 
         }
 
         private void borderRect_DragLeave(object sender, DragEventArgs e)
