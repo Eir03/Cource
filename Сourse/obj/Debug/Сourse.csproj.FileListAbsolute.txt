@@ -53,3 +53,5 @@ C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageFull.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageFull.baml
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageStorage.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageStorage.baml

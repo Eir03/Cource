@@ -42,9 +42,6 @@ namespace Сourse.Pages
                     PageClass.frmAdd.Navigate(new PageMaterial());
                     break;
                 case 3:
-                    PageClass.frmAdd.Navigate(null);
-                    break;
-                case 4:
                     PageClass.frmAdd.Navigate(new PageColor());
                     break;
                 default:

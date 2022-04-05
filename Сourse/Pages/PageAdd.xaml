@@ -22,7 +22,6 @@
                 <ComboBoxItem Content="Товар"/>
                 <ComboBoxItem Content="Категория"/>
                 <ComboBoxItem Content="Материал"/>
-                <ComboBoxItem Content="Поставки"/>
                 <ComboBoxItem Content="Цвет"/>
             </ComboBox>
         </StackPanel>
