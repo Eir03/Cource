@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Сourse.BD;
 using Сourse.Classes;
 
 namespace Сourse.Pages
@@ -33,7 +34,22 @@ namespace Сourse.Pages
 
         private void BtnReg_Click(object sender, RoutedEventArgs e)
         {
-            PageClass.frmAuthorization.Navigate(new PageVerification(TxbEmail.Text));
+            try
+            {
+                User user = new User()
+                {
+                    Email = TxbEmail.Text,
+                    Password = PbPassword.Password,
+                };
+                Odb.entities.User.Add(user);
+                Odb.entities.SaveChanges();
+                PageClass.frmAuthorization.Navigate(new PageVerification(TxbEmail.Text));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

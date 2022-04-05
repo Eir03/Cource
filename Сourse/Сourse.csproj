@@ -344,7 +344,7 @@
     <Resource Include="logo.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\Images\LOL.jpg" />
+    <Resource Include="Resource\Images\example.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BD\Model1.Context.tt">
