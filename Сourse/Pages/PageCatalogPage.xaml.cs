@@ -22,9 +22,20 @@ namespace Сourse.Pages
     /// </summary>
     public partial class PageCatalogPage : Page
     {
-        public PageCatalogPage(int id)
+        int id;
+        public PageCatalogPage(int Id)
         {
             InitializeComponent();
+
+            id = Id;
+            CmbColor.SelectedValuePath = "Id";
+            CmbColor.DisplayMemberPath = "Name";
+            CmbColor.ItemsSource = Odb.entities.Color.ToList();
+
+            CmbMaterial.SelectedValuePath = "Id";
+            CmbMaterial.DisplayMemberPath = "Name";
+            CmbMaterial.ItemsSource = Odb.entities.Material.ToList();
+
             ProductClass.product = Odb.entities.Product.Where(x=>x.IdType == id).ToList();
             CategoryList.ItemsSource = ProductClass.product;
         }

@@ -12,9 +12,11 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="730*"/>
         </Grid.RowDefinitions>
-        <TextBox Name="TxbName" TextChanged="TxbName_TextChanged"
-                        materialDesign:HintAssist.Hint="Поиск" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
-                        Width="200"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox Name="TxbName" TextChanged="TxbName_TextChanged"
+                            materialDesign:HintAssist.Hint="Поиск" FontSize="18" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="Arrow"
+                            Width="200"/>
+        </StackPanel>
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <ItemsControl Name="CategoryList"
                                   Margin="10"  HorizontalAlignment="Center" 
