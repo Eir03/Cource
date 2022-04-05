@@ -100,6 +100,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditPge\PageCatalog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPge\PageFullProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditPge\PageProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -213,6 +225,15 @@
     </Compile>
     <Compile Include="Pages\CatalogPage.xaml.cs">
       <DependentUpon>CatalogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPge\PageCatalog.xaml.cs">
+      <DependentUpon>PageCatalog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPge\PageFullProduct.xaml.cs">
+      <DependentUpon>PageFullProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditPge\PageProduct.xaml.cs">
+      <DependentUpon>PageProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageAdd.xaml.cs">
       <DependentUpon>PageAdd.xaml</DependentUpon>

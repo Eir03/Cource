@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using Сourse.BD;
 using Сourse.Classes;
 using Сourse.Pages;
+using Сourse.Pages.EditPge;
 
 namespace Сourse
 {
@@ -43,6 +44,9 @@ namespace Сourse
                     break;
                 case 2:
                     PageClass.frmMain.Navigate(new PageAdd());
+                    break;
+                case 3:
+                    PageClass.frmMain.Navigate(new PageCatalog());
                     break;
                 default:
                     break;

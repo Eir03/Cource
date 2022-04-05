@@ -55,3 +55,9 @@ C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\BasketPage.baml
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageStorage.g.cs
 C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\PageStorage.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageCatalog.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageFullProduct.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageProduct.g.cs
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageCatalog.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageFullProduct.baml
+C:\Users\Danila\source\repos\Сourse\Сourse\obj\Debug\Pages\EditPge\PageProduct.baml

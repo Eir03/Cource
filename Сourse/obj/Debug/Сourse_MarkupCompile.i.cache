@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Danila\source\repos\Сourse\Сourse\App.xaml
-15-1539130487
+1889154108
 21746581585
-38665182757
+41-1218313290
 222023585299
-Pages\BasketPage.xaml;Pages\CatalogPage.xaml;Pages\PageAdd.xaml;Pages\PageAuzhorization.xaml;Pages\PageCatalogPage.xaml;Pages\PageCategory.xaml;Pages\PageColor.xaml;Pages\PageFull.xaml;Pages\PageMaterial.xaml;Pages\PageProduct.xaml;Pages\PageRegistration.xaml;Pages\PageStorage.xaml;Pages\PageVerification.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\MainWindow.xaml;
+Pages\BasketPage.xaml;Pages\CatalogPage.xaml;Pages\EditPge\PageCatalog.xaml;Pages\EditPge\PageFullProduct.xaml;Pages\EditPge\PageProduct.xaml;Pages\PageAdd.xaml;Pages\PageAuzhorization.xaml;Pages\PageCatalogPage.xaml;Pages\PageCategory.xaml;Pages\PageColor.xaml;Pages\PageFull.xaml;Pages\PageMaterial.xaml;Pages\PageProduct.xaml;Pages\PageRegistration.xaml;Pages\PageStorage.xaml;Pages\PageVerification.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\MainWindow.xaml;
 resource\images\splash.png
 True
 

@@ -28,13 +28,6 @@ namespace Сourse.Pages
             InitializeComponent();
 
             id = Id;
-            CmbColor.SelectedValuePath = "Id";
-            CmbColor.DisplayMemberPath = "Name";
-            CmbColor.ItemsSource = Odb.entities.Color.ToList();
-
-            CmbMaterial.SelectedValuePath = "Id";
-            CmbMaterial.DisplayMemberPath = "Name";
-            CmbMaterial.ItemsSource = Odb.entities.Material.ToList();
 
             ProductClass.product = Odb.entities.Product.Where(x=>x.IdType == id).ToList();
             CategoryList.ItemsSource = ProductClass.product;
